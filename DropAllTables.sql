@@ -1,0 +1,1 @@
+DROP TABLE nations, genders, humans, countries, conferences, conference_participants;

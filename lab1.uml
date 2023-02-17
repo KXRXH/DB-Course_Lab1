@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.conference_participants</OriginalElement>
+  <nodes>
+    <node x="271.0" y="-145.0">f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.countries</node>
+    <node x="32.75" y="358.0">f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.conference_participants</node>
+    <node x="58.0" y="-145.0">f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.genders</node>
+    <node x="-149.0" y="-145.0">f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.nations</node>
+    <node x="256.5" y="89.0">f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.conferences</node>
+    <node x="-47.5" y="19.0">f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.humans</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.conference_participants" target="f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.conferences" relationship="REFERENCES">
+      <point x="74.5" y="-56.5" />
+      <point x="256.25" y="333.0" />
+      <point x="370.5" y="333.0" />
+      <point x="0.0" y="74.5" />
+    </edge>
+    <edge source="f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.conference_participants" target="f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.humans" relationship="REFERENCES">
+      <point x="-74.5" y="-56.5" />
+      <point x="107.25" y="333.0" />
+      <point x="49.5" y="333.0" />
+      <point x="0.0" y="144.5" />
+    </edge>
+    <edge source="f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.humans" target="f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.nations" relationship="REFERENCES">
+      <point x="-48.5" y="-144.5" />
+      <point x="1.0" y="-6.0" />
+      <point x="-55.5" y="-6.0" />
+      <point x="0.0" y="57.0" />
+    </edge>
+    <edge source="f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.conferences" target="f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.countries" relationship="REFERENCES">
+      <point x="0.0" y="-74.5" />
+      <point x="0.0" y="57.0" />
+    </edge>
+    <edge source="f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.humans" target="f0ab3c99-7ffb-4640-9ace-d2624b6bc285.TABLE:studs.s367468.genders" relationship="REFERENCES">
+      <point x="48.5" y="-144.5" />
+      <point x="98.0" y="-6.0" />
+      <point x="154.5" y="-6.0" />
+      <point x="0.0" y="57.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.988993710691824" showDependencies="false" x="138.9109697933227" y="206.57233704292526" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
