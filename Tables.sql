@@ -1,23 +1,23 @@
 -- Table with all genders
-CREATE TABLE Genders
+CREATE TABLE Gender
 (
     gender_id   serial PRIMARY KEY,
     gender_name text NOT NULL
 );
 -- Table with all AVAILABLE nations
-CREATE TABLE Nations
+CREATE TABLE Nation
 (
     nation_id   serial PRIMARY KEY,
     nation_name text NOT NULL
 );
 -- Table with all countries
-CREATE TABLE Countries
+CREATE TABLE Country
 (
     country_id   serial PRIMARY KEY,
     country_name text NOT NULL
 );
 -- Human table
-CREATE TABLE Humans
+CREATE TABLE Human
 (
     -- Auto-generated id
     id          serial PRIMARY KEY,
@@ -32,7 +32,7 @@ CREATE TABLE Humans
     FOREIGN KEY (sex) REFERENCES Genders (gender_id)
 );
 -- Table with all conferences
-CREATE TABLE Conferences
+CREATE TABLE Conference
 (
     id              serial PRIMARY KEY,
     conference_name text,
