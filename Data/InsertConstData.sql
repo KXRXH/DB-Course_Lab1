@@ -54,7 +54,7 @@ VALUES ('Conference A', 5),
        ('Conference D', 19),
        ('Conference E', 13);
 -- Insert values for participants
-INSERT INTO Human (first_name, second_name, sex, age, nationality, is_alive)
+INSERT INTO Human (name, surname, sex, age, nationality, is_alive)
 VALUES ('Иван', 'Иванов', 1, 32, 1, true),
        ('Елена', 'Сидорова', 2, 27, 2, true),
        ('Петр', 'Петров', 1, 45, 1, true),
