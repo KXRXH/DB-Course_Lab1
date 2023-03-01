@@ -1,5 +1,5 @@
 -- Inserting data for nation table.
-INSERT INTO Nations (nation_name)
+INSERT INTO Nation (nation_name)
 VALUES ('Германия'),
        ('Франция'),
        ('Италия'),
@@ -21,11 +21,11 @@ VALUES ('Германия'),
        ('Южная Африка'),
        ('Египет');
 -- Inserting data for genders table.
-INSERT INTO Genders (gender_name)
+INSERT INTO Gender (gender_name)
 VALUES ('Мужчина'),
        ('Женщина');
 -- Insert 20 rows of data into the Humans table
-INSERT INTO Countries (country_name)
+INSERT INTO Country (country_name)
 VALUES ('Россия'),
        ('США'),
        ('Китай'),
@@ -47,14 +47,14 @@ VALUES ('Россия'),
        ('Индонезия'),
        ('Нигерия');
 -- Insert 20 rows of data into the Countries table
-INSERT INTO Conferences (conference_name, country_id)
+INSERT INTO Conference (conference_name, country_id)
 VALUES ('Conference A', 5),
        ('Conference B', 8),
        ('Conference C', 2),
        ('Conference D', 19),
        ('Conference E', 13);
 -- Insert values for participants
-INSERT INTO Humans (first_name, second_name, sex, age, nationality, is_alive)
+INSERT INTO Human (first_name, second_name, sex, age, nationality, is_alive)
 VALUES ('Иван', 'Иванов', 1, 32, 1, true),
        ('Елена', 'Сидорова', 2, 27, 2, true),
        ('Петр', 'Петров', 1, 45, 1, true),

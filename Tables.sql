@@ -28,8 +28,8 @@ CREATE TABLE Human
     age         integer NOT NULL,
     nationality integer NOT NULL,
     is_alive    boolean NOT NULL,
-    FOREIGN KEY (nationality) REFERENCES Nations (nation_id),
-    FOREIGN KEY (sex) REFERENCES Genders (gender_id)
+    FOREIGN KEY (nationality) REFERENCES Nation (nation_id),
+    FOREIGN KEY (sex) REFERENCES Gender (gender_id)
 );
 -- Table with all conferences
 CREATE TABLE Conference
@@ -37,12 +37,12 @@ CREATE TABLE Conference
     id              serial PRIMARY KEY,
     conference_name text,
     country_id      integer,
-    FOREIGN KEY (country_id) REFERENCES Countries (country_id)
+    FOREIGN KEY (country_id) REFERENCES Country (country_id)
 );
 -- Table with conferences participants
 CREATE TABLE ConferenceParticipants
 (
-    conference_id  integer REFERENCES Conferences (id),
-    participant_id integer REFERENCES Humans (id),
+    conference_id  integer REFERENCES Conference (id),
+    participant_id integer REFERENCES Human (id),
     PRIMARY KEY (conference_id, participant_id)
 );

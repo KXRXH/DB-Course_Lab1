@@ -1,1 +1,1 @@
-DROP TABLE Nations, Genders, Humans, Countries, Conferences, ConferenceParticipants;
+DROP TABLE Nation, Gender, Human, Country, Conference, ConferenceParticipants;
