@@ -30,7 +30,7 @@ CREATE TABLE Human
     is_alive    boolean NOT NULL,
     FOREIGN KEY (nationality) REFERENCES Nation (nation_id),
     FOREIGN KEY (sex) REFERENCES Gender (gender_id)
-    ON DELETE CASCADE
+        ON DELETE CASCADE
 );
 -- Table with all conferences
 CREATE TABLE Conference
@@ -39,12 +39,13 @@ CREATE TABLE Conference
     conference_name text,
     country_id      integer NOT NULL,
     FOREIGN KEY (country_id) REFERENCES Country (country_id)
-    ON DELETE CASCADE
+        ON DELETE CASCADE
 );
 -- Table with conferences participants
 CREATE TABLE ConferenceParticipants
 (
-    conference_id  integer REFERENCES Conference (id) NOT NULL,
-    participant_id integer REFERENCES Human (id)      NOT NULL,
-    PRIMARY KEY (conference_id, participant_id)
+    conference_id  integer NOT NULL,
+    participant_id integer NOT NULL,
+    FOREIGN KEY (conference_id) REFERENCES Conference (id),
+    FOREIGN KEY (participant_id) REFERENCES Human (id)
 );
